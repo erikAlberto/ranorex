@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="34118c08-8009-41cd-a218-054d942271b6"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="InsertNames"
+	namespace="RxDatabase.Database_functions">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<setvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a5bd0988-626b-4161-932f-262c5aecbe6e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cdb32e2f-3a94-4215-a4ce-eb4b5d575b1b"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/?/?/text[@accessiblename='First name']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<AttributeValue>
+				vanesa
+			</AttributeValue>
+		</setvaluerecorditem>
+	</recorditems>
+	<repository
+	id="325c474d-3682-4384-9480-32a2d1401219"
+	name="RxDatabaseRepository"
+	relativepath="..\RxDatabaseRepository.rxrep"
+	rxversion="8.0">
+		<codegen
+		classname="RxDatabaseRepository"
+		namespace="RxDatabase">
+		</codegen>
+		<rootfolder
+		id="7ed330c8-5668-4cfa-9ca9-402c4c23b7e2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		InsertNames.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

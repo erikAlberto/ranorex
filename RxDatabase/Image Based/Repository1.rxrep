@@ -1,0 +1,50 @@
+﻿<repository
+id="da976bc6-e6bb-4a7c-8508-217d38887a5a"
+name="Repository1">
+	<codegen
+	classname="Repository1"
+	namespace="RxDatabase.Image_Based">
+	</codegen>
+	<rootfolder
+	capname="host"
+	id="04f6726d-3ec5-491e-be3e-8df0aa8471bc"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="False">
+		<appfolder
+		capname="form"
+		id="6ae3ad45-73bf-4b36-80b4-983f8b6b8fd6"
+		isrooted="True"
+		name="DemoApplication"
+		refpath="/form[@controlname='RxMainFrame']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			capname="tabpage"
+			id="8980a232-3ef8-4be8-a4c9-8d908e143a7f"
+			isrooted="True"
+			name="DatabaseTab"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpage[@controlname='RxTabStandard']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<basepath>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='RxMainFrame']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAH1JREFUOE9jQAbBwcGLgPg3EP/Hg0Hyv4OCglqh2iAAKPgGpADKJR3A
+ND9gF9r6gE3oID4M1oAOYAYACUYgZsKHwRrQAcgAIP4HxF+JwVBtCAAUBBpOPAAG4jcoEwJIMSAg
+IEB41IBRA7AaAAIgQ4AS3wlhoLofQBpoAAMDALmzlW61ZtpaAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.6m"
+		durationms="98329"
+		type="root"
+		rid="13ae1862748da0f6"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Alber"
+		rxversion="10.0.0.0"
+		host="DESKTOP-GNEJE9M"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1024x768"
+		timestamp="9/13/2021 12:14:45 PM"
+		timestampiso="2021-09-13T16:14:45"
+		endtime="9/13/2021 12:16:24 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="UserCodeModule1">
+		<detail>
+			UserCodeModule1
+		</detail>
+		<errormessage>
+			Failed to find item 'RxDatabaseRepository.DemoApplication.DatabaseTab.LastName'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="01:38.247"
+			timeRelativeToTestModuleStartTime="01:38.247"
+			timeWallClock="12:16:24"
+			time="01:38.247"
+			level="Error"
+			category="Module"
+			errimg="images_UserCode_b098980b\UserCode_b098980b_85a8c2cc_trace.jpg"
+			errthumb="images_UserCode_b098980b\UserCode_b098980b_85a8c2cc_trace_thumb.jpg">
+			<message>
+				Failed to find item 'RxDatabaseRepository.DemoApplication.DatabaseTab.LastName'.<br/>No element found for path '/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/?/?/text[@accessiblename='Last name']' at step 'form[@controlname='RxMainFrame']' after 263 attempts within 1.5m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass81_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at RxDatabase.RxDatabaseRepositoryFolders.DatabaseTabFolder.get_LastName() in c:\Users\Alber\Documents\Ranorex\RanorexStudio Projects\RxSampleDataDrivenTesting1\RxDatabase\RxDatabaseRepository.cs:line 440&#13;&#10;   at RxDatabase.Image_Based.UserCodeModule1.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Alber\Documents\Ranorex\RanorexStudio Projects\RxSampleDataDrivenTesting1\RxDatabase\Image Based\UserCodeModule1.cs:line 52&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Alber\Documents\Ranorex\RanorexStudio Projects\RxSampleDataDrivenTesting1\RxDatabase\Image Based\UserCodeModule1.cs"
+				codeline="52"
+				type="repoitem"
+				path="/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/?/?/text[@accessiblename='Last name']"
+				itempath="?/?/text[@accessiblename='Last name']"
+				fullname="RxDatabaseRepository.DemoApplication.DatabaseTab.LastName"
+				id="ee66a06e163b42b68abc248006bf88ab"
+				timeout="90000"
+				failedStep="form[@controlname='RxMainFrame']"
+				bestPathPrefix=""
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>
