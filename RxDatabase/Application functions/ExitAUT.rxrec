@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="d7d4bacf-bec1-4321-8382-e30821ecf24f"
 mode="Desktop"
 rxversion="8.0">
-	<name>
-		ExitAUT
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -835,6 +832,8 @@ rxversion="8.0">
 				<path>
 					/form[@controlname='RxMainFrame']/button[@controlname='RxButtonExit']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="bacf427c-1ef8-4d9f-a5f9-e07ae6b9a269">

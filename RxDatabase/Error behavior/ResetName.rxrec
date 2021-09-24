@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9a967f86-9807-40fe-a60b-0e2b6244c579"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ResetName"
+	namespace="RxDatabase.Error_behavior">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="12;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="4060305f-d0a2-42a9-915c-0a66aa97f0f6"
+		sx="237"
+		sy="424"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0bfa54a1-f13c-46aa-9dcd-ffa0e62b4f87"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="True"
+				index="0"
+				prefcap="link"
+				rect="225,415,28,15"
+				role="link"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						Reset
+					</attribute>
+					<attribute
+					name="url"
+					type="System.String">
+						Reset
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Click
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Reset
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Link
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focused, Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						Reset
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabIntroduction']/link[@controlname='RxLinkBtnReset']/?/?/link[@accessiblename='Reset']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="0b08fc60-12c6-4021-8cb8-5318a9cd9c6f">
+				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
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="325c474d-3682-4384-9480-32a2d1401219"
+	name="RxDatabaseRepository"
+	relativepath="..\RxDatabaseRepository.rxrep"
+	rxversion="8.0">
+		<codegen
+		classname="RxDatabaseRepository"
+		namespace="RxDatabase">
+		</codegen>
+		<rootfolder
+		id="7ed330c8-5668-4cfa-9ca9-402c4c23b7e2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ResetName.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -5,7 +5,6 @@
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="TestSuite.rxtst" />
-    <Element value="Application functions\StartAUT.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

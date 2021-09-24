@@ -5,8 +5,15 @@
   <Array name="bookmarks" />
   <Array name="files" />
   <SerializedValue name="ModuleBrowserState">
-    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{45FD0FEF-8DB4-4A11-ADA6-383C61393483}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>d33fe954-fe34-4b68-901c-2281513beded</string>
+      <string>24689699-7a7a-4c48-a873-24b1096295eb</string>
+      <string>90007b71-7d45-4183-adc6-42b5cd68431b</string>
+      <string>04591e18-4c60-4125-930f-24463c98e560</string>
+    </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution Aut_Testing[Solution Items[]]]&#xD;&#xA;Solution Aut_Testing&#xD;&#xA;Solution Aut_Testing" />
+  <ProjectBrowserState value="[Solution Aut_Testing[Solution Items[]RxDatabase[]]]&#xD;&#xA;Solution Aut_Testing\RxDatabase\TestSuite.rxtst&#xD;&#xA;Solution Aut_Testing\RxDatabase\Application functions" />
   <StartupProject value="{45FD0FEF-8DB4-4A11-ADA6-383C61393483}" />
 </Properties>

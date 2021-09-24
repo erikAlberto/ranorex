@@ -77,6 +77,18 @@ namespace RxDatabase
             set { _setGender = value; }
         }
 
+        string _setNameTab = "Test database";
+
+        /// <summary>
+        /// Gets or sets the value of variable setNameTab.
+        /// </summary>
+        [TestVariable("e40ef86b-a01e-4271-9ae1-a5eec8616497")]
+        public string setNameTab
+        {
+            get { return _setNameTab; }
+            set { _setNameTab = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -139,6 +151,7 @@ namespace RxDatabase
             RepoItemInfo _chkshowimageInfo;
             TheCatInfoClass _thecatInfo;
             MonthCalendar1InfoClass _monthcalendar1Info;
+            RepoItemInfo _introductionInfo;
 
             /// <summary>
             /// Creates a new DemoApplication  folder.
@@ -148,12 +161,13 @@ namespace RxDatabase
             {
                 _databasetab = new RxDatabaseRepositoryFolders.DatabaseTabFolder(this);
                 _rxtabintroduction = new RxDatabaseRepositoryFolders.RxTabIntroductionFolder(this);
-                _databaseInfo = new RepoItemInfo(this, "Database", "?/?/tabpage[@accessiblename='Test database']", "", 30000, null, "34b9f228-153b-44b4-ae34-1e2747592b0f");
+                _databaseInfo = new RepoItemInfo(this, "Database", "?/?/tabpage[@accessiblename=$setNameTab]", "", 30000, null, "34b9f228-153b-44b4-ae34-1e2747592b0f");
                 _btnexitInfo = new RepoItemInfo(this, "BtnExit", "button[@controlname='RxButtonExit']", "", 30000, null, "02058d54-efaf-4a1d-b09d-9d7d8538364d");
                 _imagebasedautomationInfo = new RepoItemInfo(this, "ImageBasedAutomation", "?/?/tabpage[@accessiblename='Image-based automation']", "", 30000, null, "c535ddc7-a10e-48c5-aed5-1282bc8b0bfb");
                 _chkshowimageInfo = new RepoItemInfo(this, "ChkShowImage", "?/?/tabpage[@controlname='RxTabImageBased']/checkbox[@controlname='chkShowImage']", "", 30000, null, "698e5cbd-9aca-490d-b65a-450401f784fb");
                 _thecatInfo = new TheCatInfoClass(this);
                 _monthcalendar1Info = new MonthCalendar1InfoClass(this);
+                _introductionInfo = new RepoItemInfo(this, "Introduction", "?/?/tabpage[@accessiblename='Introduction']", "", 30000, null, "6da3a6b6-99e2-4018-8a9b-e12ddf6abf54");
             }
 
             /// <summary>
@@ -433,6 +447,30 @@ namespace RxDatabase
                 get
                 {
                     return _monthcalendar1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Introduction item.
+            /// </summary>
+            [RepositoryItem("6da3a6b6-99e2-4018-8a9b-e12ddf6abf54")]
+            public virtual Ranorex.TabPage Introduction
+            {
+                get
+                {
+                    return _introductionInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Introduction item info.
+            /// </summary>
+            [RepositoryItemInfo("6da3a6b6-99e2-4018-8a9b-e12ddf6abf54")]
+            public virtual RepoItemInfo IntroductionInfo
+            {
+                get
+                {
+                    return _introductionInfo;
                 }
             }
 
@@ -764,6 +802,7 @@ namespace RxDatabase
             RepoItemInfo _enteryournameInfo;
             RepoItemInfo _btnsubmitusernameInfo;
             RepoItemInfo _lblwelcomemessageInfo;
+            RepoItemInfo _resetInfo;
 
             /// <summary>
             /// Creates a new RxTabIntroduction  folder.
@@ -774,6 +813,7 @@ namespace RxDatabase
                 _enteryournameInfo = new RepoItemInfo(this, "EnterYourName", "?/?/text[@accessiblename='Enter your name']", "", 30000, null, "10fa2329-3aa7-4d28-8fed-e28686640c66");
                 _btnsubmitusernameInfo = new RepoItemInfo(this, "BtnSubmitUserName", "button[@controlname='btnSubmitUserName']", "", 30000, null, "426d636b-3536-4fc5-8263-875d7fa25a9b");
                 _lblwelcomemessageInfo = new RepoItemInfo(this, "LblWelcomeMessage", "text[@controlname='lblWelcomeMessage']", "", 30000, null, "a44ee35f-0ed7-4f96-81d7-17f0ebdb8df3");
+                _resetInfo = new RepoItemInfo(this, "Reset", "link[@controlname='RxLinkBtnReset']/?/?/link[@accessiblename='Reset']", "", 30000, null, "0bfa54a1-f13c-46aa-9dcd-ffa0e62b4f87");
             }
 
             /// <summary>
@@ -869,6 +909,30 @@ namespace RxDatabase
                 get
                 {
                     return _lblwelcomemessageInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Reset item.
+            /// </summary>
+            [RepositoryItem("0bfa54a1-f13c-46aa-9dcd-ffa0e62b4f87")]
+            public virtual Ranorex.Link Reset
+            {
+                get
+                {
+                    return _resetInfo.CreateAdapter<Ranorex.Link>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Reset item info.
+            /// </summary>
+            [RepositoryItemInfo("0bfa54a1-f13c-46aa-9dcd-ffa0e62b4f87")]
+            public virtual RepoItemInfo ResetInfo
+            {
+                get
+                {
+                    return _resetInfo;
                 }
             }
         }

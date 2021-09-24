@@ -9,6 +9,10 @@ rxversion="8.0">
 			ref="34118c08-8009-41cd-a218-054d942271b6"
 			type="Recording">
 			</testmodule>
+			<setup
+			id="0bba9f36-7f41-4d41-9cdd-aef31d6d98e5"
+			name="setup">
+			</setup>
 			<testcase
 			id="134db71c-5836-4852-95dc-82b016bc5d57"
 			name="ImageValidation">
@@ -122,6 +126,24 @@ rxversion="8.0">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="a09803d8-eac7-4000-a4c6-904cfad837c4"
+			name="GotoDatabaseTab"
+			ref="2902f626-a82d-4246-902a-0c2542551bbf"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a43ade81-85d8-4795-964e-824ae7da4bd8"
+			name="GotoIntroductionTab"
+			ref="970e7a04-2670-4187-8dd3-d66ac5c5f16e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a894ce5b-1efa-4936-aa1b-ffac2be4fb7b"
+			name="ResetName"
+			ref="9a967f86-9807-40fe-a60b-0e2b6244c579"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="a998844c-6a4b-4332-b06d-d43c20f42dc7"
 			name="ValidationMessage"
 			ref="51b87966-acff-4f59-9950-79669c599902"
@@ -149,6 +171,10 @@ rxversion="8.0">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="bce38643-d3ff-4521-91f6-f6025c5063ac"
+			name="teardown">
+			</teardown>
 			<smartfoldernode
 			id="c05674d1-e111-4c7f-be7c-53a1a4b17253"
 			name="SmartFolder">
@@ -210,6 +236,10 @@ rxversion="8.0">
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<setup
+			id="ea7e668c-a2e9-4cde-a9ee-2ba39a504b2f"
+			name="setup">
+			</setup>
 			<testmodule
 			id="f91a3f0b-078f-4e41-9da4-eb265c1b69e2"
 			name="SelectDepartment"
@@ -243,6 +273,14 @@ rxversion="8.0">
 					<testcase
 					id="8ae240f2-eb10-4b82-b350-21adc20c6849"
 					name="SearchUser">
+						<setup
+						id="0bba9f36-7f41-4d41-9cdd-aef31d6d98e5"
+						name="setup">
+							<testmodule
+							id="a43ade81-85d8-4795-964e-824ae7da4bd8"
+							name="GotoIntroductionTab">
+							</testmodule>
+						</setup>
 						<testmodule
 						id="94555ba5-a676-4ed6-bb0c-3fe088e8c45f"
 						name="InserName">
@@ -259,10 +297,26 @@ rxversion="8.0">
 						id="a998844c-6a4b-4332-b06d-d43c20f42dc7"
 						name="ValidationMessage">
 						</testmodule>
+						<teardown
+						id="bce38643-d3ff-4521-91f6-f6025c5063ac"
+						name="teardown">
+							<testmodule
+							id="a894ce5b-1efa-4936-aa1b-ffac2be4fb7b"
+							name="ResetName">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="19803715-0124-454f-a8ea-4fe9f45f3c0f"
 					name="AddUsers">
+						<setup
+						id="ea7e668c-a2e9-4cde-a9ee-2ba39a504b2f"
+						name="setup">
+							<testmodule
+							id="a09803d8-eac7-4000-a4c6-904cfad837c4"
+							name="GotoDatabaseTab">
+							</testmodule>
+						</setup>
 						<testmodule
 						id="6403bdff-0f54-4c66-8715-139bbd3df567"
 						name="InsertName">
@@ -433,7 +487,7 @@ rxversion="8.0">
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="testing">
+	default="Regression">
 		<testconfiguration
 		name="AdvancedImageValidation">
 			<testcontainer
@@ -441,25 +495,10 @@ rxversion="8.0">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
-		name="SmokeTest">
-			<testcontainer
-			id="212c184f-6f1c-4a06-b2e2-451613c7037a">
-			</testcontainer>
-			<testcontainer
-			id="8ae240f2-eb10-4b82-b350-21adc20c6849">
-			</testcontainer>
-		</testconfiguration>
-		<testconfiguration
-		name="testing">
+		name="Regression">
 			<testcontainer
 			id="134db71c-5836-4852-95dc-82b016bc5d57">
 			</testcontainer>
-			<testcontainer
-			id="212c184f-6f1c-4a06-b2e2-451613c7037a">
-			</testcontainer>
-		</testconfiguration>
-		<testconfiguration
-		name="TestRun">
 			<testcontainer
 			id="19803715-0124-454f-a8ea-4fe9f45f3c0f">
 			</testcontainer>
@@ -480,9 +519,21 @@ rxversion="8.0">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
-		name="TestRun1WithoutValidation">
+		name="SmokeTest">
 			<testcontainer
-			id="19803715-0124-454f-a8ea-4fe9f45f3c0f">
+			id="212c184f-6f1c-4a06-b2e2-451613c7037a">
+			</testcontainer>
+			<testcontainer
+			id="670ab5fc-c26e-4368-9dbd-46336b9319a7">
+			</testcontainer>
+			<testcontainer
+			id="8ae240f2-eb10-4b82-b350-21adc20c6849">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
+		name="testing">
+			<testcontainer
+			id="134db71c-5836-4852-95dc-82b016bc5d57">
 			</testcontainer>
 			<testcontainer
 			id="212c184f-6f1c-4a06-b2e2-451613c7037a">

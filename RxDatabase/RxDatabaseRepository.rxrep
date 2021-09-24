@@ -28,10 +28,9 @@ rxversion="8.0">
 			id="34b9f228-153b-44b4-ae34-1e2747592b0f"
 			name="Database"
 			refimgid="5d3ffedf-dd03-464d-926b-daa52e98dd09"
-			refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@accessiblename='Test database']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='RxMainFrame']/?/?/tabpage[@accessiblename='Test database']
+				/form[@controlname='RxMainFrame']/?/?/tabpage[@accessiblename=$setNameTab]
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -4707,6 +4706,17 @@ pTul1ZIxWD6hnxSwHKpLk0i9PpgwagzmGM/CT7MWYfFUEwLuaEwaSLAZOgAzhutj5oj+mDWiL2aN
 				searchtimeout="30000ms">
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabIntroduction']/text[@controlname='lblWelcomeMessage']
 				</item>
+				<item
+				addcaps="link,accessible"
+				capname="link"
+				id="0bfa54a1-f13c-46aa-9dcd-ffa0e62b4f87"
+				name="Reset"
+				refimgid="1de766e0-3600-42e3-bb72-cfc6c21e952d"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabIntroduction']/link/text/link[@accessiblename='Reset']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabIntroduction']/link[@controlname='RxLinkBtnReset']/?/?/link[@accessiblename='Reset']
+				</item>
 				<basepath>
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabIntroduction']
 				</basepath>
@@ -5035,6 +5045,17 @@ p0KjKgSbAkgOPMwU3pvyg/cWSA7A5EByACYHkgMwOZAcgMnZSI6CgjJfWSUHAMzKsvwfm7gWp9wZ
 				</image>
 				/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabImageBased']/datetime[@controlname='monthCalendar1']
 			</item>
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="6da3a6b6-99e2-4018-8a9b-e12ddf6abf54"
+			name="Introduction"
+			refimgid="0d17e5b8-fc37-4f03-8c49-5c2215c264ab"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@accessiblename='Introduction']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='RxMainFrame']/?/?/tabpage[@accessiblename='Introduction']
+			</item>
 			<basepath>
 				/form[@controlname='RxMainFrame']
 			</basepath>
@@ -5249,6 +5270,11 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 		id="1a3a6e06-d4ec-47f8-8bea-e0c1d9c89480"
 		name="setGender">
 			rdb Male
+		</var>
+		<var
+		id="e40ef86b-a01e-4271-9ae1-a5eec8616497"
+		name="setNameTab">
+			Test database
 		</var>
 	</variables>
 </repository>

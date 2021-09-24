@@ -83,10 +83,6 @@ namespace RxDatabase.Application_functions
             Host.Local.RunApplication("./RxDemoApp.exe", "", "./", false);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.Database' at 27;7.", repo.DemoApplication.DatabaseInfo, new RecordItemIndex(1));
-            repo.DemoApplication.Database.Click("27;7");
-            Delay.Milliseconds(200);
-            
         }
 
 #region Image Feature Data

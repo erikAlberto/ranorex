@@ -160,6 +160,18 @@
       <UserCode>true</UserCode>
       <id>ed1fd20c-3ca3-4211-8906-77bd8c7bb4a8</id>
     </Compile>
+    <Compile Include="Database functions\GotoDatabaseTab.cs">
+      <BoundTo>cb3c0a19-9ac2-4a62-bdae-ac516da6ef57</BoundTo>
+      <DependentUpon>GotoDatabaseTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8a468ac0-8f92-4429-901a-8f4d9deee7d5</id>
+    </Compile>
+    <Compile Include="Database functions\GotoDatabaseTab.UserCode.cs">
+      <BoundTo>cb3c0a19-9ac2-4a62-bdae-ac516da6ef57</BoundTo>
+      <DependentUpon>GotoDatabaseTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>eb51c580-9edb-4153-91e4-179f1fb7fe8b</id>
+    </Compile>
     <Compile Include="Database functions\InsertAge.cs">
       <BoundTo>e8edb0bd-f8bf-453d-8ac4-33735564b8c2</BoundTo>
       <DependentUpon>InsertAge.rxrec</DependentUpon>
@@ -232,6 +244,18 @@
       <id>7c29b914-a0b9-4753-a993-076f985dc321</id>
       <BoundTo>0f0c6d14-c135-424d-bb4c-566fcbbb52c0</BoundTo>
     </Compile>
+    <Compile Include="Error behavior\GotoIntroductionTab.cs">
+      <BoundTo>b40d8193-bcd5-4d4c-a284-86fa0767e7da</BoundTo>
+      <DependentUpon>GotoIntroductionTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>65fc3dd9-2b4e-412c-8b0a-5c34dafa826f</id>
+    </Compile>
+    <Compile Include="Error behavior\GotoIntroductionTab.UserCode.cs">
+      <BoundTo>b40d8193-bcd5-4d4c-a284-86fa0767e7da</BoundTo>
+      <DependentUpon>GotoIntroductionTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a43b25dc-0026-4f55-9b17-98dc98647168</id>
+    </Compile>
     <Compile Include="Error behavior\InserName.cs">
       <BoundTo>3baff75a-62b5-41b5-93b2-9a84272adbfe</BoundTo>
       <DependentUpon>InserName.rxrec</DependentUpon>
@@ -243,6 +267,18 @@
       <DependentUpon>InserName.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>48b3017c-2544-423f-bb00-14b39d5c26f3</id>
+    </Compile>
+    <Compile Include="Error behavior\ResetName.cs">
+      <BoundTo>f5aa8ac6-b1df-41f6-b45d-eb94c2f6c2af</BoundTo>
+      <DependentUpon>ResetName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f5d034a1-c264-49f8-b715-cfd96b928874</id>
+    </Compile>
+    <Compile Include="Error behavior\ResetName.UserCode.cs">
+      <BoundTo>f5aa8ac6-b1df-41f6-b45d-eb94c2f6c2af</BoundTo>
+      <DependentUpon>ResetName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>45131715-8585-446c-a549-6719d2e927a1</id>
     </Compile>
     <Compile Include="Error behavior\ValidateName.cs">
       <BoundTo>0ec97148-9b68-452c-90ab-240b8b629014</BoundTo>
@@ -342,6 +378,11 @@
       <id>1ea4f2fd-27b8-40ca-81e9-5be3771225f8</id>
       <recordtableid>f6ee8e43-c6db-4b07-8b70-cfbc0c85a5e5</recordtableid>
     </None>
+    <None Include="Database functions\GotoDatabaseTab.rxrec">
+      <BoundTo>d913458f-7c5c-43e1-8158-d30a2fcdae94</BoundTo>
+      <id>cb3c0a19-9ac2-4a62-bdae-ac516da6ef57</id>
+      <recordtableid>2902f626-a82d-4246-902a-0c2542551bbf</recordtableid>
+    </None>
     <None Include="Database functions\InsertAge.rxrec">
       <BoundTo>d913458f-7c5c-43e1-8158-d30a2fcdae94</BoundTo>
       <id>e8edb0bd-f8bf-453d-8ac4-33735564b8c2</id>
@@ -372,10 +413,20 @@
       <id>0f0c6d14-c135-424d-bb4c-566fcbbb52c0</id>
       <recordtableid>3403f9fd-88eb-4d86-8637-223b8e6aae26</recordtableid>
     </None>
+    <None Include="Error behavior\GotoIntroductionTab.rxrec">
+      <BoundTo>d913458f-7c5c-43e1-8158-d30a2fcdae94</BoundTo>
+      <id>b40d8193-bcd5-4d4c-a284-86fa0767e7da</id>
+      <recordtableid>970e7a04-2670-4187-8dd3-d66ac5c5f16e</recordtableid>
+    </None>
     <None Include="Error behavior\InserName.rxrec">
       <BoundTo>d913458f-7c5c-43e1-8158-d30a2fcdae94</BoundTo>
       <id>3baff75a-62b5-41b5-93b2-9a84272adbfe</id>
       <recordtableid>fb48f025-eed6-48c9-9096-155f399aae6f</recordtableid>
+    </None>
+    <None Include="Error behavior\ResetName.rxrec">
+      <BoundTo>d913458f-7c5c-43e1-8158-d30a2fcdae94</BoundTo>
+      <id>f5aa8ac6-b1df-41f6-b45d-eb94c2f6c2af</id>
+      <recordtableid>9a967f86-9807-40fe-a60b-0e2b6244c579</recordtableid>
     </None>
     <None Include="Error behavior\ValidateName.rxrec">
       <BoundTo>d913458f-7c5c-43e1-8158-d30a2fcdae94</BoundTo>
